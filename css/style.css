@@ -330,6 +330,25 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-style: 14px; }
 
+.menu {
+  text-align: center;
+  color: #131313;
+  background-color: #fff; }
+  .menu__text {
+    font-size: 25px; }
+
+.nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+  .nav__item {
+    text-decoration: none;
+    color: #ffA500;
+    font-size: 30px;
+    margin-right: 20px; }
+
 .hero {
-  background: #E3B873;
+  background: #ffA500;
   color: #131313; }
