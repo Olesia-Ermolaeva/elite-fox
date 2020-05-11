@@ -1,17 +1,26 @@
 @font-face {
-  font-family: 'Futura Book';
+  font-family: 'Marck Script';
   src: 
-  url('../fonts/futura/FuturaBookC.woff') format('woff'),
-  url('../fonts/futura/FuturaBookC.woff2') format('woff');
+  url('../fonts/MarckScript/MarckScript-Regular.woff') format('woff'),
+  url('../fonts/MarckScript/MarckScript-Regular.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
 }
 @font-face {
-  font-family: 'Futura Demi';
+  font-family: 'Open Sans';
   src: 
-  url('../fonts/futura/FuturaDemiC.woff') format('woff'),
-  url('../fonts/futura/FuturaDemiC.woff2') format('woff');
+  url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: 
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: wrap;

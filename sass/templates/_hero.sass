@@ -1,3 +1,24 @@
 .hero
-  background: $primary
-  color: $dark
+  width: 100%
+  min-height: 100vh
+  background: $primary url(../img/hero-bg.jpg) no-repeat center/cover
+  color: $light
+  &__content
+    margin-top: 20rem
+    width: 70%
+  &__title
+    font-family: $title-font
+    font-size: 3rem
+    line-height: 2rem
+    margin-bottom: 6rem
+  &__description
+    font-family: $basic-font
+    font-size: 1.8rem
+    line-height: 33px
+    max-width: 45rem
+    margin-bottom: 4rem
+  &__links
+    display: flex
+    justify-content: space-between
+    width: 45%
+

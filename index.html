@@ -6,39 +6,125 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/ea1828068c.js" crossorigin="anonymous"></script>
   <title>Elite Fox. Подарки в Костроме</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/svg" href="favicon.svg"/>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="menu">
-        <div class="menu__title">
-          <h1>Elite Fox</h1>
-        </div>
-        <div class="menu__text">
-          Подарки для самых в Костроме
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo header__logo"><a href="index.html" class="logo__link">EliteFox</a></div>
+      <div class="nav header__nav">
+        <div class="nav__item"><a href="#cosmetics">косметика</a></div>
+        <div class="nav__item"><a href="#books">книги</a></div>
+        <div class="nav__item"><a href="#sweets">сладости</a></div>
+      </div>
+      <!-- /.nav header__nav -->
+      <div class="social header__social">
+        <div class="social__item">
+          <a href="https://www.instagram.com/elite_fox_gifts/"><img src="img/ig.svg" alt="Instagram"></a>
+        </div>      
+        <div class="social__item">
+          <a href="https://vk.com/elite_fox_gifts"><img src="img/vk.svg" alt="VK"></a>
+        </div>  
+        <div class="social__item">
+          <a href="https://www.facebook.com/Elite-Fox-2309833332406517/"><img src="img/fb.svg" alt="Facebook"></a>
         </div>
       </div>
-      <!-- /.menu -->
-        
-        <div class="nav">
-          <a href="https://vk.com/elite_fox_gifts" class="nav__item"><i class="fab fa-vk"></i></a>
-          <a href="https://www.instagram.com/elite_fox_gifts/" class="nav__item"><i class="fab fa-instagram"></i></a>
-        </div>      
-
+      <!-- /.social header__social -->
     </div>
     <!-- /.container -->
   </header>
-
   <main>
-    <section class="hero">
+    <section class="section hero">
       <div class="container">
-        
-        <p>Сайт в режиме наполнения</p>
+        <div class="hero__content">
+          <div class="hero__title">
+            <h1>Подарки в Костроме</h1>
+          </div>
+          <div class="hero__description">
+            Закажите подарок для самого значимого человека, и мы привезем его в этот же день 
+          </div>
+          <div class="hero__links">
+            <a href="" class="link link--light">смотреть</a>
+            <a href="" class="link link--light">заказать</a>
+          </div>
+          <!-- /.hero__links -->
+        </div>
+        <!-- /.hero__content -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.hero -->
+    <!-- /.section hero -->
+    <section class="section causes">
+      <div class="container">
+        <div class="section__title causes__title">
+          Почему именно у нас?
+        </div>
+        <!-- /.section__title causes__title -->
+        <div class="causes__content">
+          <div class="causes__card">
+            <div class="causes__strong">
+              Подарим яркие эмоции по привлекательной цене
+            </div>
+            <div class="causes__text">Наши яркие коробочки поднимут настроение вашей второй половине, а наполнение вызовет восторг. Всё это - по доступной цене.</div>
+          </div>
+          <div class="causes__card">
+            <div class="causes__strong">Удивим идеями и качеством</div>
+            <div class="causes__text">Знаете круг интересов второй половины? Подскинем идей и красиво упакуем.У любимого уже все есть? Подберем подарок, который всегда пригодится. </div>
+          </div>
+          <div class="causes__card">
+            <div class="causes__strong">Доставим по Костроме за один день бесплатно</div>
+            <div class="causes__text">Или отправим по России транспортной компанией на следующий рабочий день бесплатно при заказе от 3000 руб.</div>
+          </div>
+          <div class="causes__card">
+            <div class="causes__strong">Без риска</div>
+            <div class="causes__text">Оплата при получении / наложенным платежом.</div>
+          </div>
+        </div>
+        <!-- /.causes__content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section causes -->
+    <section class="section books">
+      <div class="container">
+        <div class="section__title books__title">Подарки для ума</div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section books -->
+    <div class="upbutton" id="upbutton"></div>  
   </main>
-  
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/blazy.js"></script>
+  <script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+     })();
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,22 +1,57 @@
-.menu
-  text-align: center
-  color: $dark
+.header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
+  padding-top: 1.5rem
+  padding-bottom: 1.5rem
   background-color: $light
-  &__text
-    font-size: 25px
+  &__container
+    display: flex
+    justify-content: space-between
+  &__logo
+    font-family: $logo-font
+    font-size: 2.5rem
+    color: $dark
+    transition: 0.5s
+    &:hover
+      color: $primary
+  &__social
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-around
 .nav
-  background-color: $light
   display: flex
   justify-content: center
-  margin-top: 3%
-  margin-bottom: 3%
+  align-items: center
   &__item
-    text-decoration: none
-    color: $primary
-    font-size: 30px
-    margin-right: 20px
+    font-family: $basic-font
+    text-transform: uppercase
+    position: relative
+    margin-left: 2rem
+    transition: 0.5s
+    &:hover
+      cursor: pointer
+      &::after
+        content: ''
+        position: absolute
+        top: 100%
+        left: 0
+        background: $primary
+        width: 100%
+        height: 2px
+.social
+  &__item
+    margin-left: 1.5rem
+    &:hover
+      filter: drop-shadow(0 5px 5px rgba($primary, 0.5))
+.logo
+  &__link
+    transition: 0.3s
+    &:hover
+      color: $primary
 
-    
 
 
     
