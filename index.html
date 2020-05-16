@@ -47,7 +47,7 @@
           </div>
           <div class="hero__links">
             <a href="" class="link link--light">смотреть</a>
-            <a href="" class="link link--light">заказать</a>
+            <a href="#form" class="link link--light">заказать</a>
           </div>
           <!-- /.hero__links -->
         </div>
@@ -87,7 +87,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section causes -->
-    <section class="section books">
+    <section class="section books" id="books">
       <div class="container">
         <div class="section__title books__title"><h2>Подарки для ума</h2></div>
         <div class="swiper-container">
@@ -102,7 +102,33 @@
                       <div class="books__text">
                         35 кило надежды <br> 100 лет одиночества <br> Монах, который продал свой феррари
                       </div>
-                      <a href="" class="link link--primary">заказать</a>
+                      <a href="#form" class="link link--primary">заказать</a>
+                    </div>
+                    <!-- /.books__description -->
+                  </div>
+                  <!-- /.col-30 -->
+                  <div class="col-50">
+                    <div class="books__card"><img src="img/books/2.jpg" alt="books" class="books__img"></div>
+                  </div>
+                  <!-- /.col-30 -->
+                </div>
+                <!-- /.wrap -->
+              </div>
+              <!-- /.books__slide -->
+            </div>
+            <div class="swiper-slide">
+              <div class="books__slide">
+                <div class="wrap">
+                  <div class="col-50">
+                    <div class="books__description">
+                      <strong class="price books__price">900 руб.</strong>
+                      <div class="books__name">К прочтению - обязательно!</div>
+                      <div class="books__text">
+                        Великий Гэтсби <br>
+                        Портрет Дориана Грея <br>
+                        Человек, который принял жену за шляпу
+                      </div>
+                      <a href="#form" class="link link--primary">заказать</a>
                     </div>
                     <!-- /.books__description -->
                   </div>
@@ -116,15 +142,58 @@
               </div>
               <!-- /.books__slide -->
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide">
+              <div class="books__slide">
+                <div class="wrap">
+                  <div class="col-50">
+                    <div class="books__description">
+                      <strong class="price books__price">900 руб.</strong>
+                      <div class="books__name">Классика</div>
+                      <div class="books__text">
+                        Собачье сердце <br>
+                        Таинственная история Билли Миллигана <br>
+                        Цветы для Элджернона <br>
+                      </div>
+                      <a href="#form" class="link link--primary">заказать</a>
+                    </div>
+                    <!-- /.books__description -->
+                  </div>
+                  <!-- /.col-30 -->
+                  <div class="col-50">
+                    <div class="books__card"><img src="img/books/3.jpg" alt="books" class="books__img"></div>
+                  </div>
+                  <!-- /.col-30 -->
+                </div>
+                <!-- /.wrap -->
+              </div>
+              <!-- /.books__slide -->
+            </div>
+            <div class="swiper-slide">
+              <div class="books__slide">
+                <div class="wrap">
+                  <div class="col-50">
+                    <div class="books__description">
+                      <strong class="price books__price">1400 руб. </strong>
+                      <div class="books__name">Набор книг с прекрасными историями о жизни</div>
+                      <div class="books__text">
+                        Утешительная партия игры в петанк <br>
+                        Аэропорт <br>
+                        Жареные зеленые помидоры в кафе "Полустанок
+                      </div>
+                      <a href="#form" class="link link--primary">заказать</a>
+                    </div>
+                    <!-- /.books__description -->
+                  </div>
+                  <!-- /.col-30 -->
+                  <div class="col-50">
+                    <div class="books__card"><img src="img/books/4.jpg" alt="books" class="books__img"></div>
+                  </div>
+                  <!-- /.col-30 -->
+                </div>
+                <!-- /.wrap -->
+              </div>
+              <!-- /.books__slide -->
+            </div>
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
@@ -135,6 +204,69 @@
     <!-- /.section books -->
     <div class="upbutton" id="upbutton"></div>  
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="wrap">
+        <div class="col-50 footer__col-50">
+          <div class="footer__text">Присоединяйтесь к нам в социальных сетях</div>
+          <div class="footer footer__social">
+            <div class="social__item footer__social__item">
+              <a href="https://www.instagram.com/elite_fox_gifts/"><img src="img/ig-light.svg" alt="Instagram"></a>
+            </div>      
+            <div class="social__item footer__social__item">
+              <a href="https://vk.com/elite_fox_gifts"><img src="img/vk-light.svg" alt="VK"></a>
+            </div>  
+            <div class="social__item footer__social__item">
+              <a href="https://www.facebook.com/Elite-Fox-2309833332406517/"><img src="img/fb-light.svg" alt="Facebook"></a>
+            </div>
+          </div>
+          <!-- /.footer footer__social -->
+        </div>
+        <div class="col-50">
+            <form action="send.php" method="POST" class="form footer__form" id="form">
+              <div class="input-group footer__input-group">
+                <label for="footer-user-name" class="label form__label  footer__label">Имя</label>
+                <input type="text" name="userName" class="input form__input footer__input" id="footer-user-name" placeholder="Иван">
+              </div>
+              <div class="input-group footer__input-group">
+                <label for="footer-user-phone" class="label form__label  footer__label">Телефон</label>
+                <input type="tel" name="userPhone" class="input form__input footer__input" id="footer-user-phone" placeholder="tatsianapavlenko.ru">
+              </div>
+              <div class="input-group footer__input-group">
+                <label for="footer-user-message" class="label form__label  footer__label">Сообщение</label>
+                <input type="text" name="userMessage" class="input form__input footer__input" id="footer-user-message" placeholder="Введите Ваше сообщение">
+              </div>
+              <button class="button footer__form__button button--light">Отправить</button>
+            </form>
+            <!-- /.form prices__form -->
+        </div>
+      </div>
+      <!-- /.wrap -->
+    </div>
+    <!-- /.container -->
+    </div>
+    <!-- /.footer__form -->
+    <div class="footer__contacts">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__contacts__item">Разработка и реализация <a href="http://la-nuit-sereine.ru/" class="link--footer">la-nuit-sereine.ru</a></div>
+          <div class="footer__contacts__item">2020 © All rights reserved </div>
+          <div class="footer__contacts__item">Сайт не является договором публичной оферты. <br> Цены, представленные на сайте, могут отличаться от дейcтвующих.</div>
+        </div>
+        
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer__contacts -->
+  </footer>
+  <div class="modal__success">
+    <div class="modal__success__dialog">
+      <button class="modal__success__close"></button>
+      <div class="modal__success__title">Заявка отправлена! Менеджер позвонит вам через 20 минут</div>
+    </div>
+    <!-- /.modal__succes__dialog -->
+  </div>
+  <!-- /.modal modal__succes -->
   <script
   src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

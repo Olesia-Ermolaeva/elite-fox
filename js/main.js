@@ -40,122 +40,15 @@ $(document).ready(function () {
   return false;
   });
 
-  //валидация формы модального окна
-  $(".modal__form").validate({
+  
+// валидация формы в подвале
+  $(".footer__form").validate({
     rules: {
       // строчное правило
       userName: {
         required: true,
         minlength: 2,
         maxlength: 15
-      },
-      userPhone: {
-        required: true,
-        minlength: 10
-      }
-    },
-    errorElement: "em",
-    errorClass: "invalid",
-    //сообщения
-    messages: {
-      userName: {
-        required: "Имя обязательно",
-        minlength: "Имя не короче двух букв",
-        maxlength: "Имя не длиннее 15 букв"
-      }, 
-      userPhone: {
-        required: "Телефон обязателен",
-        minlength: "Введите телефон полностью" 
-      }
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-          modal.removeClass('modal--visible');
-          $('.modal__success').addClass('modal__success--visible');
-        },
-        error: function (response) {
-          console.error('Ошибка запроса' + response);
-        }
-      });
-    }  
-  });
-
-  // валидация формы узнать стоимость
-  $(".prices__form").validate({
-    rules: {
-      // строчное правило
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      userEmail: {
-        required: true,
-        email: true
-      },
-      userSite: {
-        required: true,
-        url: true
-      },
-      userMessage: {
-        required: true,
-        minlength: 10
-      }
-    },
-    errorElement: "ep",
-    errorClass: "invalid",
-    //сообщения
-    messages: {
-      userName: {
-        required: "Имя обязательно",
-        minlength: "Имя не короче двух букв",
-        maxlength: "Имя не длиннее 15 букв" 
-      }, 
-      userEmail: {
-        required: "E-mail обязателен",
-        email: "Введите верный e-mail" 
-      },
-      userSite: {
-        required: "Адрес сайта обязателен",
-        url: "Введите адрес сайта в формате http://www.mysite.ru/"
-      },
-      userMessage: {
-        required: "Напишите что-нибудь",
-        minlength: "Напишите больше"
-      }
-    },  
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-          $('.modal__success').addClass('modal__success--visible');
-        },
-        error: function (response) {
-          console.error('Ошибка запроса' + response);
-        }
-      });
-    }
-  });
-// валидация формы с контактами
-  $(".feedback__form").validate({
-    rules: {
-      // строчное правило
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      userEmail: {
-        required: true,
-        email: true
       },
       userPhone: {
         required: true,
@@ -175,10 +68,6 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее 15 букв" 
       }, 
-      userEmail: {
-        required: "E-mail обязателен",
-        email: "Введите верный e-mail" 
-      },
       userPhone: {
         required: "Телефон обязателен",
         minlength: "Введите телефон полностью" 
@@ -205,7 +94,7 @@ $(document).ready(function () {
   });
 
   // маска для телефона
-  $('[type=tel]').mask('+7 000 000-00-00', {placeholder: "+7 999 888-88-88"});
+  $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(999)000-00-00"});
  
   //видеоплеер
   var player;
