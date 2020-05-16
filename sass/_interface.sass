@@ -12,6 +12,8 @@
   font-family: $basic-font
   text-transform: uppercase
   text-decoration: none
+  &:hover
+    cursor: pointer
   &--light
     color: $light
     border: 1px solid $light
@@ -20,3 +22,13 @@
     &:hover
       color: $primary
       border: 1px solid $primary
+  &--primary
+    color: $primary
+    border: 1px solid $primary
+    padding: 1rem 3rem
+    transition: 0.3s
+    &:hover
+      color: $dark
+      border: 1px solid $dark
+.swiper-pagination-bullet-active
+  background: rgba($dark, 0.8)

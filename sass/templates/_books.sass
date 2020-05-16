@@ -1,0 +1,50 @@
+.books
+  &__title
+    text-align: right
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      background-color: $dark
+      width: 80%
+      height: 1px
+      top: 50%
+      left: 0
+  &__slide
+    padding-top: 5rem
+    padding-bottom: 8rem
+  &__description
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: space-around
+    height: 20rem
+    margin-right: 2rem
+    margin-top: 12.4rem
+  &__price
+    font-family: $title-font
+    font-size: 2rem
+    font-weight: bold
+    line-height: 2rem
+  &__name
+    font-size: 1.5rem
+  &__text
+    text-align: right
+  &__card
+    width: 40rem
+    height: 30rem
+    position: relative
+    z-index: 1
+    &::after
+      content: url(../img/img-bg.png)
+      position: absolute
+      right: -12%
+      bottom: -15%
+      z-index: -1
+  &__img
+    position: absolute
+    width: 100%
+      
+
+
+      
