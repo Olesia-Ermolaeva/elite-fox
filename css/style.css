@@ -354,7 +354,8 @@ template {
     color: #fff;
     border: 1px solid #fff;
     padding: 1rem 3rem;
-    transition: 0.3s; }
+    transition: 0.3s;
+    margin-right: 2rem; }
     .link--light:hover {
       color: #ffA600;
       border: 1px solid #ffA600; }
@@ -368,7 +369,8 @@ template {
       border: 1px solid #131313; }
   .link--footer {
     font-family: "Open Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s; }
     .link--footer:hover {
       color: rgba(255, 166, 0, 0.8); }
 
@@ -386,6 +388,9 @@ template {
     cursor: pointer;
     color: #131313;
     box-shadow: 0 5px 5px rgba(19, 19, 19, 0.3); }
+
+.button:focus {
+  outline: none; }
 
 .container {
   width: 85%;
@@ -506,12 +511,8 @@ h2 {
     font-family: "Open Sans light", sans-serif;
     font-size: 1.8rem;
     line-height: 33px;
-    max-width: 45rem;
+    max-width: 40rem;
     margin-bottom: 4rem; }
-  .hero__links {
-    display: flex;
-    justify-content: space-between;
-    width: 45%; }
 
 .causes {
   background: #fff url("../img/gift.png") no-repeat;
@@ -566,7 +567,7 @@ h2 {
     position: absolute;
     content: '';
     background-color: #131313;
-    width: 80%;
+    width: 70%;
     height: 1px;
     top: 50%;
     left: 0; }
@@ -581,16 +582,18 @@ h2 {
   align-items: flex-end;
   justify-content: space-around;
   height: 20rem;
-  margin-right: 2rem;
+  margin-right: 7rem;
   margin-top: 12.4rem; }
 
 .books__price {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 2rem; }
+  line-height: 2rem;
+  text-align: right; }
 
 .books__name {
+  text-align: right;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif; }
 
@@ -602,7 +605,8 @@ h2 {
   width: 40rem;
   height: 30rem;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-left: -5rem; }
   .books__card::after {
     content: url(../img/img-bg.png);
     position: absolute;
@@ -732,3 +736,106 @@ ef {
     text-align: center;
     margin: 0;
     margin-bottom: 2.428rem; }
+
+@media screen and (max-width: 1450px) {
+  .hero__title {
+    font-size: 2.5rem;
+    line-height: 1.5rem; }
+  .hero__description {
+    font-size: 1.5rem; }
+  .books__card::after {
+    display: none; } }
+
+@media screen and (max-width: 1100px) {
+  .books__slide {
+    padding-bottom: 0; }
+  .books__wrap {
+    align-items: start; }
+  .books__description {
+    margin-top: 0;
+    margin-right: 2rem; }
+  .books__card {
+    margin-left: 0;
+    width: 100%; } }
+
+@media screen and (max-width: 994px) {
+  body {
+    font-style: 16px; }
+  .wrap {
+    flex-wrap: wrap; }
+  .col-50 {
+    flex-basis: 100%; }
+    .col-50--text {
+      order: 1;
+      background: #fff;
+      margin-top: 22rem; }
+  .section {
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    .section__title {
+      margin-top: 0;
+      margin-bottom: 1rem; }
+  .header__nav {
+    display: none; }
+  .hero__content {
+    margin-top: 7rem;
+    width: 100%; }
+  .causes__title::before, .causes__title::after {
+    display: none; }
+  .causes__card::before {
+    content: url(../img/check-m.svg);
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    margin-top: -9px; }
+  .books__title {
+    text-align: center; }
+    .books__title::before {
+      display: none; }
+  .books__description {
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    height: 17rem;
+    margin-bottom: 2rem;
+    z-index: 1; }
+  .books__price {
+    text-align: center; }
+  .books__name {
+    text-align: center; }
+  .books__text {
+    text-align: center; }
+  .books__card {
+    width: 90%;
+    height: 0;
+    margin: auto;
+    z-index: -1; }
+  .footer__col-50 {
+    flex-basis: 100%;
+    flex-direction: column; }
+  .footer__form {
+    align-items: center; }
+  .footer__contacts {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; } }
+
+@media screen and (max-width: 760px) {
+  .link--light {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center; }
+  .hero__title {
+    line-height: 4rem;
+    margin-bottom: 0; }
+  .causes__content {
+    margin-top: 2.5rem; }
+  .causes__card {
+    width: 100%; }
+  .footer__wrap {
+    flex-direction: column; } }
+
+@media screen and (max-width: 570px) {
+  .col-50 {
+    flex-basis: 100%; }
+    .col-50--text {
+      margin-top: 13rem; } }

@@ -19,6 +19,7 @@
     border: 1px solid $light
     padding: 1rem 3rem
     transition: 0.3s
+    margin-right: 2rem
     &:hover
       color: $primary
       border: 1px solid $primary
@@ -33,6 +34,7 @@
   &--footer
     font-family: $basic-font
     color: rgba($light, 0.8)
+    transition: 0.3s
     &:hover
       color: rgba($primary, 0.8)
 .swiper-pagination-bullet-active
@@ -49,3 +51,5 @@
       cursor: pointer
       color: $dark
       box-shadow: (0 5px 5px rgba($dark, 0.3))
+  &:focus
+    outline: none
