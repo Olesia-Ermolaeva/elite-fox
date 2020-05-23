@@ -22,7 +22,6 @@ $(document).ready(function () {
     },
   });
 
-  new WOW().init();
 
   //плавная прокрутка вверх
   $(window).scroll(function () {
@@ -42,7 +41,7 @@ $(document).ready(function () {
 
   
 // валидация формы в подвале
-  $(".footer__form").validate({
+  $('.footer__form').validate({
     rules: {
       // строчное правило
       userName: {
@@ -96,24 +95,7 @@ $(document).ready(function () {
   // маска для телефона
   $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(999)000-00-00"});
  
-  //видеоплеер
-  var player;
-  var stastics = $('.statistics__description');
-  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '100%',
-      width: '100%',
-      videoId: '0uwmN9Bj3Ko',
-      events: {
-        'onReady': videoPlay,
-      },
-    });
-    stastics.css('display', 'none');
-  });
 
-  function videoPlay(event) {
-    event.target.playVideo();
-  }
 });
 
 
